@@ -1,0 +1,123 @@
+/* TagNames */
+body{
+	background-image:url('../img/outros/bg-index.jpg');
+	font-family:Sans Serif Collection Regular, Arial;
+}
+nav a{
+	position:relative;
+}
+a{
+	color:#000000;
+	font-family:SF Pro Text;
+	font-weight:600;
+}
+img{
+	width:75%;
+	border-radius:10px;
+}
+
+/* ClassNames */
+.navbar-bg{
+	background:linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter:blur(5px); 
+    -webkit-backdrop-filter: blur(5px); 
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow:0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+.article-bg{
+	background-color:transparent;
+	margin:10vh;
+	font-family:SF Pro Display;
+}
+.footer-bg{
+	background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(5px); 
+    -webkit-backdrop-filter: blur(5px); 
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+	margin-top:1vw;
+	font-family:SF Pro Display;
+}
+.footer-botao{
+	color:#ffffff;
+	background-color:#737373;
+}
+.card{
+	background-image:url('../img/outros/bg-card.jpg');
+	width:100%;
+}
+.title-img{
+	transform: translate(-50%, -50%);
+    left: 50%;
+    top: 0;
+	text-align:center; 
+	background:linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter:blur(15px); 
+    -webkit-backdrop-filter:blur(15px); 
+    border:1px solid rgba(255, 255, 255, 0.18);
+	border-radius:10px;
+    box-shadow:0 8px 32px 0 rgba(0, 0, 0, 0.3);
+	font-size:25px;
+	font-family:S;
+	color:#000000;
+	width:65%;	
+	text-shadow:2px 2px 5px #ffffff;
+}
+.br-article{
+	display:none;
+}
+.dados{
+	position:relative;
+}
+
+/* com eventos */
+nav div a::after{
+	content:" ";
+	width:0%;
+	height:2px;
+	background-color:#d9d9d9;
+	position:absolute;
+	bottom:0;
+	left:0;
+	transition:.5s;
+}
+nav a:hover::after{
+	width:100%;
+}
+.dados:after{
+	content:" ";
+	width:0%;
+	height:2px;
+	background-color:#d9d9d9;
+	position:absolute;
+	bottom:0;
+	left:0;
+	transition:.5s;
+}
+after:hover::after{
+	width:100%;
+}
+
+/* Media screen  */
+@media only screen and (max-width: 700px){
+	.article-bg{
+		margin:3vh;
+	}
+	.title-img{
+		width:70%;
+		font-size:20px;
+	}
+	.br-article{
+		display:inline;
+	}
+}
+
+
+
+
+
+
+
+
+
+
